@@ -856,3 +856,8 @@ class FindSigInfoResult(Event):
     def __init__(self, result):
         Event.__init__(self)
         self.result = result
+
+class DryRun(Event):
+    """
+    Event to fire during a dry run
+    """
